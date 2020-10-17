@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>chg_create_standard_change</action_name>
+        <active>true</active>
+        <client>false</client>
+        <client_script_v2><![CDATA[function onClick(g_form) {
+
+}]]></client_script_v2>
+        <comments>Create a Standard Change Request from Incident form.</comments>
+        <condition>current.state != IncidentState.CLOSED &amp;&amp; gs.hasRole("itil,sn_change_write") &amp;&amp; gs.fieldExists('incident', 'rfc') &amp;&amp; current.rfc.nil()</condition>
+        <form_action>true</form_action>
+        <form_button>false</form_button>
+        <form_button_v2>false</form_button_v2>
+        <form_context_menu>true</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Create Standard Change</name>
+        <onclick/>
+        <order>102</order>
+        <script><![CDATA[action.setRedirectURL(new StdChangeUtils().getURLForTask(current, 'rfc'));]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-11-19 19:07:33</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>da23721567220300fa50775617415a0d</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>Create Standard Change</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Change Management - Standard Change Catalog" source="com.snc.change_management.standard_change_catalog">b81e05ca7146101091f9db5cf8a37296</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</sys_scope>
+        <sys_update_name>sys_ui_action_da23721567220300fa50775617415a0d</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:57</sys_updated_on>
+        <table>incident</table>
+        <ui11_compatible>true</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</claim_owner_scope>
+        <claim_timestamp>17535736aaf0000001</claim_timestamp>
+        <metadata_update_name>sys_ui_action_da23721567220300fa50775617415a0d</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>incident</previous_claim_name>
+        <previous_claim_scope>bd536e1fdb7710109a312bfa4b9619f1</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-17 07:25:57</sys_created_on>
+        <sys_id>94f4aa9fdb7710109a312bfa4b961979</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:57</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</claim_owner_scope>
+        <claim_timestamp>17535736a9f0000001</claim_timestamp>
+        <metadata_update_name>sys_ui_action_da23721567220300fa50775617415a0d</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>com.snc.change_management.standard_change_catalog</previous_claim_name>
+        <previous_claim_scope>com.snc.change_management.standa</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-17 07:25:57</sys_created_on>
+        <sys_id>58f4aa9fdb7710109a312bfa4b961979</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:57</sys_updated_on>
+    </sys_claim>
+</record_update>

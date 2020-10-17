@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sysevent_email_action">
+    <sysevent_email_action action="INSERT_OR_UPDATE">
+        <action_insert>false</action_insert>
+        <action_update>false</action_update>
+        <active>true</active>
+        <advanced_condition/>
+        <affected_field_on_event/>
+        <category display_value="IT Service Management" name="IT Service Management">b69d02137f232200ee2e108c3ffa9142</category>
+        <collection>incident</collection>
+        <condition table="incident">sys_class_name=incident^EQ<item display_value="Incident" endquery="false" field="sys_class_name" goto="false" newquery="false" operator="=" or="false" value="incident"/>
+            <item endquery="true" field="" goto="false" newquery="false" operator="=" or="false" value=""/>
+        </condition>
+        <content_type>multipart/mixed</content_type>
+        <default_interval/>
+        <description/>
+        <digest_from/>
+        <digest_html/>
+        <digest_reply_to/>
+        <digest_separator_html/>
+        <digest_separator_text/>
+        <digest_subject/>
+        <digest_template/>
+        <digest_text/>
+        <digestable>false</digestable>
+        <event_name>task.send_survey</event_name>
+        <event_parm_1>true</event_parm_1>
+        <event_parm_2>false</event_parm_2>
+        <exclude_delegates>false</exclude_delegates>
+        <force_delivery>false</force_delivery>
+        <from/>
+        <generation_type>event</generation_type>
+        <importance/>
+        <include_attachments>false</include_attachments>
+        <item/>
+        <item_table/>
+        <mandatory>false</mandatory>
+        <message><![CDATA[<font color="red">We value your input. Please help us by taking the time to fill out this short survey:</font>
+
+<a href =${event.parm2}>Click here to take the survey</a>
+
+Thanks, 
+
+<hr/>
+If this issue has not been resolved to your satisfaction please contact:</p>
+EMAIL: <A HREF="mailto:yourname@example.com">Help Desk Manager</a></p>
+
+
+Number: ${number}
+Resolved by: ${assigned_to}
+Short description: ${short_description}
+Click here to view: ${URI_REF}
+<hr/>
+Comments: 
+${comments}]]></message>
+        <message_html><![CDATA[<div>${mail_script:incident_body_header}</div>
+		<div>${mail_script:incident_survey}</div>
+		<div>${mail_script:incident_take_me_to_the_incident}</div>]]></message_html>
+        <message_list>48500b0253020200601fa3fc9ec58732</message_list>
+        <message_text/>
+        <name>Incident Survey</name>
+        <omit_watermark>true</omit_watermark>
+        <order/>
+        <push_message_only>false</push_message_only>
+        <recipient_fields/>
+        <recipient_groups/>
+        <recipient_users/>
+        <reply_to/>
+        <send_self>true</send_self>
+        <sms_alternate/>
+        <style/>
+        <subject>Please take this survey related to Incident ${task_effective_number}</subject>
+        <subscribable>false</subscribable>
+        <sys_class_name>sysevent_email_action</sys_class_name>
+        <sys_created_by>glide.maint</sys_created_by>
+        <sys_created_on>2009-06-08 04:35:45</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>be1a8cb6c0a8016600d5d5f018487cd4</sys_id>
+        <sys_mod_count>52</sys_mod_count>
+        <sys_name>Incident Survey</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Mobile UI" source="com.glide.ui.m">acf6c9467102101091f9db5cf8a3727d</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</sys_scope>
+        <sys_update_name>sysevent_email_action_be1a8cb6c0a8016600d5d5f018487cd4</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:31</sys_updated_on>
+        <sys_version>2</sys_version>
+        <template display_value="Unsubscribe and Preferences Helvetica">d465111f3b4b2200c869c2c703efc47c</template>
+        <type>email</type>
+        <weight>0</weight>
+    </sysevent_email_action>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</claim_owner_scope>
+        <claim_timestamp>175357302100000001</claim_timestamp>
+        <metadata_update_name>sysevent_email_action_be1a8cb6c0a8016600d5d5f018487cd4</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>incident</previous_claim_name>
+        <previous_claim_scope>bd536e1fdb7710109a312bfa4b9619f1</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-17 07:25:31</sys_created_on>
+        <sys_id>b9d4e29fdb7710109a312bfa4b9619e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:31</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</claim_owner_scope>
+        <claim_timestamp>175357302030000001</claim_timestamp>
+        <metadata_update_name>sysevent_email_action_be1a8cb6c0a8016600d5d5f018487cd4</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>com.glide.ui.m</previous_claim_name>
+        <previous_claim_scope>com.glide.ui.m</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-17 07:25:31</sys_created_on>
+        <sys_id>7dd4e29fdb7710109a312bfa4b9619e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:31</sys_updated_on>
+    </sys_claim>
+</record_update>

@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>hold_reason</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2015-11-13 10:27:58</sys_created_on>
+        <sys_id>24e02184c3b30200b6dcdfdc64d3ae31</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>hold_reason</sys_name>
+        <sys_package display_value="Incident Management - Core" source="com.snc.incident_management">0d2e8dca7146101091f9db5cf8a37248</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</sys_scope>
+        <sys_update_name>sys_ui_policy_action_24e02184c3b30200b6dcdfdc64d3ae31</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:55</sys_updated_on>
+        <table>incident</table>
+        <ui_policy display_value="When state is On Hold the On hold reason field is visible and mandatory">d8e02184c3b30200b6dcdfdc64d3ae30</ui_policy>
+        <visible>true</visible>
+    </sys_ui_policy_action>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</claim_owner_scope>
+        <claim_timestamp>1753573611c0000001</claim_timestamp>
+        <metadata_update_name>sys_ui_policy_action_24e02184c3b30200b6dcdfdc64d3ae31</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>incident</previous_claim_name>
+        <previous_claim_scope>bd536e1fdb7710109a312bfa4b9619f1</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-17 07:25:55</sys_created_on>
+        <sys_id>6fe46a9fdb7710109a312bfa4b9619cc</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:55</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</claim_owner_scope>
+        <claim_timestamp>175357361100000001</claim_timestamp>
+        <metadata_update_name>sys_ui_policy_action_24e02184c3b30200b6dcdfdc64d3ae31</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>com.snc.incident_management</previous_claim_name>
+        <previous_claim_scope>com.snc.incident_management</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-17 07:25:55</sys_created_on>
+        <sys_id>27e46a9fdb7710109a312bfa4b9619cd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:55</sys_updated_on>
+    </sys_claim>
+</record_update>

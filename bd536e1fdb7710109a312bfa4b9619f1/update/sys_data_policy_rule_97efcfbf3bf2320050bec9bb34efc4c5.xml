@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_data_policy_rule">
+    <sys_data_policy_rule action="INSERT_OR_UPDATE">
+        <disabled>ignore</disabled>
+        <field>close_notes</field>
+        <mandatory>true</mandatory>
+        <sys_class_name>sys_data_policy_rule</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2017-05-25 05:41:00</sys_created_on>
+        <sys_data_policy display_value="Make close info mandatory when resolved or closed">d3efcfbf3bf2320050bec9bb34efc4c2</sys_data_policy>
+        <sys_id>97efcfbf3bf2320050bec9bb34efc4c5</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name>close_notes</sys_name>
+        <sys_package display_value="Incident Management Best Practice - Kingston" source="com.snc.best_practice.incident.kingston">140f01827186101091f9db5cf8a37251</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</sys_scope>
+        <sys_update_name>sys_data_policy_rule_97efcfbf3bf2320050bec9bb34efc4c5</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:42</sys_updated_on>
+        <table>incident</table>
+    </sys_data_policy_rule>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</claim_owner_scope>
+        <claim_timestamp>1753573305d0000001</claim_timestamp>
+        <metadata_update_name>sys_data_policy_rule_97efcfbf3bf2320050bec9bb34efc4c5</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>incident</previous_claim_name>
+        <previous_claim_scope>bd536e1fdb7710109a312bfa4b9619f1</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-17 07:25:42</sys_created_on>
+        <sys_id>6ce4e69fdb7710109a312bfa4b961905</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:42</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</claim_owner_scope>
+        <claim_timestamp>175357330550000001</claim_timestamp>
+        <metadata_update_name>sys_data_policy_rule_97efcfbf3bf2320050bec9bb34efc4c5</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>com.snc.best_practice.incident.kingston</previous_claim_name>
+        <previous_claim_scope>com.snc.best_practice.incident.k</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-17 07:25:42</sys_created_on>
+        <sys_id>20e4e69fdb7710109a312bfa4b961906</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:42</sys_updated_on>
+    </sys_claim>
+</record_update>
