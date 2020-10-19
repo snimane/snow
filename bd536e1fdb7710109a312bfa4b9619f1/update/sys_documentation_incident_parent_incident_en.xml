@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="parent_incident" label="Parent Incident" language="en" table="incident">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>parent_incident</element>
+            <help/>
+            <hint>Can be used to collect Incidents for the same root issue</hint>
+            <label>Parent Incident</label>
+            <language>en</language>
+            <name>incident</name>
+            <plural>Parent Incidents</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2020-07-18 04:01:09</sys_created_on>
+            <sys_id>386dc5867146101091f9db5cf8a372d7</sys_id>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_name>Parent Incident</sys_name>
+            <sys_package display_value="Upgrade content for 2011 - activated only for new instances" source="upgrade.2011_common_practice">1c6d45867146101091f9db5cf8a37216</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</sys_scope>
+            <sys_update_name>sys_documentation_incident_parent_incident_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-17 07:25:28</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</claim_owner_scope>
+        <claim_timestamp>1753572f8bc0000001</claim_timestamp>
+        <metadata_update_name>sys_documentation_incident_parent_incident_en</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>incident</previous_claim_name>
+        <previous_claim_scope>bd536e1fdb7710109a312bfa4b9619f1</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-17 07:25:28</sys_created_on>
+        <sys_id>c9d4e29fdb7710109a312bfa4b961962</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:28</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</claim_owner_scope>
+        <claim_timestamp>1753572f8af0000001</claim_timestamp>
+        <metadata_update_name>sys_documentation_incident_parent_incident_en</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>upgrade.2011_common_practice</previous_claim_name>
+        <previous_claim_scope>upgrade.2011_common_practice</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-17 07:25:28</sys_created_on>
+        <sys_id>81d4e29fdb7710109a312bfa4b961963</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:28</sys_updated_on>
+    </sys_claim>
+</record_update>

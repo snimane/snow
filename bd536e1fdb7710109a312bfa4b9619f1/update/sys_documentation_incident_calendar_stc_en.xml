@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="calendar_stc" label="Resolve time" language="en" table="incident">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>calendar_stc</element>
+            <help/>
+            <hint>Time elapsed (stored in seconds) before Incident was Resolved</hint>
+            <label>Resolve time</label>
+            <language>en</language>
+            <name>incident</name>
+            <plural>Resolve times</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>system</sys_created_by>
+            <sys_created_on>2020-07-18 03:52:06</sys_created_on>
+            <sys_id>185b85067106101091f9db5cf8a37224</sys_id>
+            <sys_mod_count>2</sys_mod_count>
+            <sys_name>Resolve time</sys_name>
+            <sys_package display_value="Incident Resolution Fields" source="com.snc.incident_resolution_fields">190d0d827146101091f9db5cf8a37231</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</sys_scope>
+            <sys_update_name>sys_documentation_incident_calendar_stc_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2020-10-17 07:25:40</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</claim_owner_scope>
+        <claim_timestamp>175357327570000001</claim_timestamp>
+        <metadata_update_name>sys_documentation_incident_calendar_stc_en</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>incident</previous_claim_name>
+        <previous_claim_scope>bd536e1fdb7710109a312bfa4b9619f1</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-17 07:25:40</sys_created_on>
+        <sys_id>88e4a69fdb7710109a312bfa4b961954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:40</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</claim_owner_scope>
+        <claim_timestamp>1753573274b0000001</claim_timestamp>
+        <metadata_update_name>sys_documentation_incident_calendar_stc_en</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>com.snc.incident_resolution_fields</previous_claim_name>
+        <previous_claim_scope>com.snc.incident_resolution_fiel</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-17 07:25:40</sys_created_on>
+        <sys_id>4ce4a69fdb7710109a312bfa4b961954</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:40</sys_updated_on>
+    </sys_claim>
+</record_update>

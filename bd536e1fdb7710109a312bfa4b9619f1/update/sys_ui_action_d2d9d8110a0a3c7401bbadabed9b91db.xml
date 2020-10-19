@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_ui_action">
+    <sys_ui_action action="INSERT_OR_UPDATE">
+        <action_name>reopen_incident</action_name>
+        <active>true</active>
+        <client>true</client>
+        <client_script_v2><![CDATA[function onClick() {
+
+	if (g_form.getValue('comments') == '') {
+		// Remove any existing field message, set comments mandatory, and show a new field message
+		try {
+			g_form.hideFieldMsg('comments');
+		} catch(e) {
+
+		}
+		g_form.setMandatory('comments', true);
+		g_form.showFieldMsg('comments', getMessage('Please enter a comment when reopening an Incident'), 'error');
+		return false;  // Abort submission
+	}
+
+	// Call the UI Action and skip the 'onclick' function
+	g_form.submit(g_form.getActionName());
+}]]></client_script_v2>
+        <comments/>
+        <condition>new global.IncidentUtils().canReopenIncident(current)</condition>
+        <form_action>true</form_action>
+        <form_button>true</form_button>
+        <form_button_v2>true</form_button_v2>
+        <form_context_menu>false</form_context_menu>
+        <form_link>false</form_link>
+        <form_menu_button_v2>false</form_menu_button_v2>
+        <form_style/>
+        <hint/>
+        <isolate_script>false</isolate_script>
+        <list_action>false</list_action>
+        <list_banner_button>false</list_banner_button>
+        <list_button>false</list_button>
+        <list_choice>false</list_choice>
+        <list_context_menu>false</list_context_menu>
+        <list_link>false</list_link>
+        <list_save_with_form_button>false</list_save_with_form_button>
+        <list_style/>
+        <messages/>
+        <name>Reopen Incident</name>
+        <onclick>reopenIncident()</onclick>
+        <order>100</order>
+        <script><![CDATA[// Client side onclick function
+function reopenIncident(){
+   if (g_form.getValue('comments') == '') {
+      // Remove any existing field message, set comments mandatory, and show a new field message
+      try {
+         g_form.hideFieldMsg('comments');
+      } catch(e) {}
+      g_form.setMandatory('comments', true);
+      g_form.showFieldMsg('comments', getMessage('Please enter a comment when reopening an Incident'), 'error');
+      return false;  // Abort submission
+   }
+   // Call the UI Action and skip the 'onclick' function
+   gsftSubmit(null, g_form.getFormElement(), 'reopen_incident'); // MUST call the 'Action name' set in this UI Action
+}
+
+// Code that runs without 'onclick'
+// Ensure call to server side function with no browser errors
+if (typeof window == 'undefined')
+   serverReopen();
+
+function serverReopen() {
+   // Set Incident state to active, update and reload the record
+   current.incident_state = 2;
+	current.state = 2;
+   current.update();
+   gs.addInfoMessage(gs.getMessage("Incident reopened"));
+   action.setRedirectURL(current);
+}]]></script>
+        <show_insert>false</show_insert>
+        <show_multiple_update>false</show_multiple_update>
+        <show_query>false</show_query>
+        <show_update>true</show_update>
+        <sys_class_name>sys_ui_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2010-09-02 14:29:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path/>
+        <sys_id>d2d9d8110a0a3c7401bbadabed9b91db</sys_id>
+        <sys_mod_count>18</sys_mod_count>
+        <sys_name>Reopen Incident</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Upgrade content for 2011 - activated only for new instances" source="upgrade.2011_common_practice">1c6d45867146101091f9db5cf8a37216</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</sys_scope>
+        <sys_update_name>sys_ui_action_d2d9d8110a0a3c7401bbadabed9b91db</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:42</sys_updated_on>
+        <table>incident</table>
+        <ui11_compatible>false</ui11_compatible>
+        <ui16_compatible>false</ui16_compatible>
+    </sys_ui_action>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</claim_owner_scope>
+        <claim_timestamp>17535732e460000001</claim_timestamp>
+        <metadata_update_name>sys_ui_action_d2d9d8110a0a3c7401bbadabed9b91db</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>incident</previous_claim_name>
+        <previous_claim_scope>bd536e1fdb7710109a312bfa4b9619f1</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-17 07:25:42</sys_created_on>
+        <sys_id>ace4a69fdb7710109a312bfa4b9619ee</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:42</sys_updated_on>
+    </sys_claim>
+    <sys_claim action="INSERT_OR_UPDATE">
+        <claim_owner_scope display_value="incident">bd536e1fdb7710109a312bfa4b9619f1</claim_owner_scope>
+        <claim_timestamp>17535732e3b0000001</claim_timestamp>
+        <metadata_update_name>sys_ui_action_d2d9d8110a0a3c7401bbadabed9b91db</metadata_update_name>
+        <previous_claim_app_version>1.0.0</previous_claim_app_version>
+        <previous_claim_name>upgrade.2011_common_practice</previous_claim_name>
+        <previous_claim_scope>upgrade.2011_common_practice</previous_claim_scope>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2020-10-17 07:25:42</sys_created_on>
+        <sys_id>64e4a69fdb7710109a312bfa4b9619ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2020-10-17 07:25:42</sys_updated_on>
+    </sys_claim>
+</record_update>
